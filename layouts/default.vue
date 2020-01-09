@@ -1,13 +1,27 @@
 <template>
-  <nuxt />
+  <div class="container">
+    <Header />
+    <section>
+      <nuxt />
+    </section>
+    <Footer />
+  </div>
 </template>
+
+<script>
+import Header from '~/components/Header'
+import Footer from '~/components/Footer'
+export default {
+  components: { Header, Footer }
+}
+</script>
 
 <style>
 :root {
-  --font-title: "Quicksand", "Source Sans Pro", -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-text: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-title: 'Quicksand', 'Source Sans Pro', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-text: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
   --color-primary: 200, 200, 255;
 }
@@ -53,32 +67,24 @@ ul li {
   margin-bottom: 0.75em;
 }
 
+span.spacer {
+  flex: 1 1 auto;
+}
+</style>
+
+<style scoped>
+header {
+  flex: 0 1 auto;
+}
+section {
+  flex: 1 1 auto;
+}
+footer {
+  flex: 0 1 auto;
+}
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.btn {
-  background-color: rgba(var(--color-primary), 0.5);
-  text-align: center;
-  user-select: none;
-  border-radius: 3.5em;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.75);
-  text-decoration: none;
-  outline: none;
-  padding: 0.75em 2em;
-  min-width: 20em;
-  display: inline-block;
-}
-.btn:hover {
-  background-color: rgba(var(--color-primary), 1);
-  transition: all 100ms;
-}
-
-span.spacer {
-  flex: 1 1 auto;
 }
 </style>
