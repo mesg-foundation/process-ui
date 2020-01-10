@@ -83,7 +83,7 @@ span.spacer {
 .input > label {
   width: 100%;
   color: gray;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .input > input,
@@ -99,6 +99,25 @@ span.spacer {
   height: 60px;
   padding-left: 1em;
   font-size: 1em;
+}
+
+.btn {
+  background-color: rgba(var(--color-primary), 0.5);
+  text-align: center;
+  user-select: none;
+  border-radius: 3.5em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  outline: none;
+  padding: 0.75em 2em;
+  min-width: 20em;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: rgba(var(--color-primary), 1);
+  transition: all 100ms;
 }
 </style>
 

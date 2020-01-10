@@ -20,22 +20,11 @@
       </li>
     </ul>
     <nav>
-      <Button to="/connect">
-        Connect
-      </Button>
-      <Button href="https://docs.mesg.com">
-        Docs
-      </Button>
+      <nuxt-link class="btn" to="/connect">Connect</nuxt-link>
+      <a class="btn" href="https://docs.mesg.com" target="_blank">Docs</a>
     </nav>
   </section>
 </template>
-
-<script>
-import Button from '~/components/Button'
-export default {
-  components: { Button }
-}
-</script>
 
 <style scoped>
 section {

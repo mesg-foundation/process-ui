@@ -2,9 +2,7 @@
   <div class="input">
     <label :for="`select-${id}`">{{ label }}</label>
     <select :id="`select-${id}`" :value="v" @input="onChange($event)">
-      <option v-for="(event, i) in options" :key="i" :value="i">
-        {{ event.label || event.name }}
-      </option>
+      <option v-for="(event, i) in options" :key="i" :value="i">{{ event.label || event.name }}</option>
     </select>
   </div>
 </template>
