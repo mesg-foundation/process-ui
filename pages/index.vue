@@ -20,8 +20,12 @@
       </li>
     </ul>
     <nav>
-      <Button to="/connect">Connect</Button>
-      <Button href="https://docs.mesg.com">Docs</Button>
+      <Button to="/connect">
+        Connect
+      </Button>
+      <Button href="https://docs.mesg.com">
+        Docs
+      </Button>
     </nav>
   </section>
 </template>

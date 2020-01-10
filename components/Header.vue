@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="https://handbook.mesg.com/logo/MESG-logo-horizontal-purple.svg" alt="MESG" />
+    <img src="https://handbook.mesg.com/logo/MESG-logo-horizontal-purple.svg" alt="MESG">
   </header>
 </template>
 
