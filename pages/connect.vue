@@ -1,10 +1,5 @@
 <template>
   <div class="connector">
-    <div class="input">
-      <label for="name">Process's name</label>
-      <input id="name" v-model="process.name" placeholder="My awesome process" />
-    </div>
-
     <EventBuilder :events="events" v-model="process.event" />
     <TaskBuilder :tasks="tasks" v-model="process.task" />
 
@@ -35,7 +30,7 @@ export default {
   computed: {
     result() {
       return {
-        name: this.process.name,
+        name: new Date().toISOString(),
         nodes: [this.process.event, ...this.process.task].map((x, i) => ({
           ...x,
           key: x.key || `node-${i}`
