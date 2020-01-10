@@ -23,6 +23,7 @@ export default {
   --font-text: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
+  --color-background: 233, 233, 233;
   --color-primary: 200, 200, 255;
 }
 
@@ -37,6 +38,7 @@ html {
   line-height: 1.5em;
   margin: 0px;
   list-style: none;
+  background: rgb(var(--color-background));
 }
 
 *,
@@ -69,6 +71,34 @@ ul li {
 
 span.spacer {
   flex: 1 1 auto;
+}
+
+.input {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input > label {
+  width: 100%;
+  color: gray;
+  margin-bottom: .5em;
+}
+
+.input > input,
+.input > select {
+  padding: 20px;
+  background: white;
+  outline: none;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  height: auto;
+  border: none;
+  margin-bottom: 40px;
+  height: 60px;
+  padding-left: 1em;
+  font-size: 1em;
 }
 </style>
 
