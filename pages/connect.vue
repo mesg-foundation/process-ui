@@ -61,7 +61,7 @@ export default {
       }
     },
     command() {
-      return `npx mesg-cli process:create '${JSON.stringify(this.result)}'`
+      return `npx mesg-cli daemon:start && npx mesg-cli process:create '${JSON.stringify(this.result)}'`
     }
   },
   methods: {
