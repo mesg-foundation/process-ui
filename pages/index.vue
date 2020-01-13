@@ -20,7 +20,9 @@
       </li>
     </ul>
     <nav>
-      <nuxt-link class="btn" to="/connect">Connect</nuxt-link>
+      <nuxt-link class="btn" to="/connect">
+        Connect
+      </nuxt-link>
       <a class="btn" href="https://docs.mesg.com" target="_blank">Docs</a>
     </nav>
   </section>

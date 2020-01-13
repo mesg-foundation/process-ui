@@ -2,8 +2,12 @@
   <div class="input">
     <label :for="`select-${id}`">{{ label }}</label>
     <select :id="`select-${id}`" :value="v" @input="onChange($event)">
-      <option disabled>{{ label }}</option>
-      <option v-for="(event, i) in options" :key="i" :value="i">{{ event.label || event.name }}</option>
+      <option disabled>
+        {{ label }}
+      </option>
+      <option v-for="(event, i) in options" :key="i" :value="i">
+        {{ event.label || event.name }}
+      </option>
     </select>
   </div>
 </template>
@@ -12,7 +16,8 @@
 export default {
   props: {
     label: {
-      type: String
+      type: String,
+      default: ''
     },
     value: {
       type: Object,
