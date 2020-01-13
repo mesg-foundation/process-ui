@@ -27,7 +27,7 @@
     {
       "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
       "name": "Get ERC20 decimals",
-      "taskKey": "decimal"
+      "taskKey": "decimals"
     },
     {
       "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
