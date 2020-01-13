@@ -12,29 +12,28 @@ export default {
       required: true
     },
     value: {
-      type: Array,
-      default: () => []
+      type: Object,
+      default: () => ({})
     }
   },
   computed: {
     v() {
-      const task = (this.value.find(x => x.type === 'task') || {}).task || {}
       return this.tasks.find(
-        x => x.instance === task.instanceHash && x.taskKey === task.taskKey
+        x =>
+          x.instance === this.value.instanceHash &&
+          x.taskKey === this.value.taskKey
       )
     }
   },
   methods: {
     onChange(evt) {
-      this.$emit('input', [
-        {
-          key: 'task',
-          task: {
-            instanceHash: evt.instance,
-            taskKey: evt.taskKey
-          }
+      this.$emit('input', {
+        key: 'task',
+        task: {
+          instanceHash: evt.instance,
+          taskKey: evt.taskKey
         }
-      ])
+      })
     }
   }
 }

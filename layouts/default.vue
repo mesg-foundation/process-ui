@@ -25,6 +25,9 @@ export default {
 
   --color-background: 233, 233, 233;
   --color-primary: 200, 200, 255;
+  --color-gray: gray;
+
+  --shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
 }
 
 html {
@@ -82,16 +85,17 @@ span.spacer {
 
 .input > label {
   width: 100%;
-  color: gray;
+  color: var(--color-gray);
   margin-bottom: 0.5em;
 }
 
 .input > input,
-.input > select {
+.input > select,
+.input > table {
   padding: 20px;
   background: white;
   outline: none;
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow);
   border-radius: 4px;
   height: auto;
   border: none;
