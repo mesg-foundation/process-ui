@@ -77,6 +77,7 @@ export default {
 :root {
   --font: 'Open Sans', sans-serif;
   --color-primary: 239, 82, 209;
+  --background: rgb(var(--color-primary));
 }
 </style>
 
@@ -152,7 +153,7 @@ header > img {
 #content {
   flex: 1 1 auto;
   width: 60%;
-  background: rgb(var(--color-primary));
+  background: var(--background);
 }
 
 .container {
