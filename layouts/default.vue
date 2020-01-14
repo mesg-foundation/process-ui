@@ -77,7 +77,7 @@ export default {
 :root {
   --font: 'Open Sans', sans-serif;
   --color-primary: 239, 82, 209;
-  --background: rgb(var(--color-primary));
+  --background: rgba(var(--color-primary), 0.4);
 }
 </style>
 
