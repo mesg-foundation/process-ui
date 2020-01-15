@@ -1,6 +1,20 @@
 <template>
   <div class="container">
-    <section id="information">
+    <nav v-if="collapsed">
+      <span class="spacer" />
+      <img :src="logoInline" :alt="product" />
+      <span class="spacer" />
+      <a href="https://mesg.com" target="_blank">
+        <img src="https://handbook.mesg.com/brandmark/MESG-brandmark-purple.svg" alt="MESG" />
+      </a>
+      <a href="#" class="menu" @click="collapsed = false">
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </nav>
+    <section v-else id="information">
+      <a href="#" class="menu" @click="collapsed = true">
+        <i class="fas fa-chevron-left"></i>
+      </a>
       <span class="spacer" />
       <header>
         <img :src="logo" :alt="product" />
@@ -65,9 +79,18 @@ export default {
       type: String,
       default: 'https://www.cryptokitties.co/images/kitty-eth.svg'
     },
+    logoInline: {
+      type: String,
+      default: 'https://www.cryptokitties.co/images/kitty-eth.svg'
+    },
     product: {
       type: String,
       default: 'Cryptokitties'
+    }
+  },
+  data() {
+    return {
+      collapsed: false
     }
   }
 }
@@ -152,11 +175,28 @@ a.btn {
 </style>
 
 <style scoped>
+nav {
+  width: 80px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-right: solid 1px #bdafd6;
+  padding: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav > img {
+  transform: rotateZ(-90deg);
+  height: 40px;
+}
+
 header > img {
   width: 156px;
   margin-bottom: 40px;
 }
 #information {
+  position: relative;
   flex: 1 1 auto;
   width: 40%;
   background: white;
@@ -164,6 +204,20 @@ header > img {
   padding: 40px;
   display: flex;
   flex-direction: column;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: -17px;
+  background: white;
+  border: solid 1px #bdafd6;
+  color: rgb(var(--color-primary));
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
 }
 
 #content {
