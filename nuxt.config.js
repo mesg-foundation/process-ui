@@ -16,7 +16,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap' }
     ],
     script: [
-      { src: "https://kit.fontawesome.com/479907ae24.js", crossorigin: "anonymous" }
+      { src: 'https://kit.fontawesome.com/479907ae24.js', crossorigin: 'anonymous' }
     ]
   },
   /*

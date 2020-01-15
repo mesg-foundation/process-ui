@@ -2,22 +2,22 @@
   <div class="container">
     <nav v-if="collapsed">
       <span class="spacer" />
-      <img :src="logoInline" :alt="product" />
+      <img :src="logoInline" :alt="product">
       <span class="spacer" />
       <a href="https://mesg.com" target="_blank">
-        <img src="https://handbook.mesg.com/brandmark/MESG-brandmark-purple.svg" alt="MESG" />
+        <img src="https://handbook.mesg.com/brandmark/MESG-brandmark-purple.svg" alt="MESG">
       </a>
-      <a href="#" class="menu" @click="collapsed = false">
-        <i class="fas fa-chevron-right"></i>
+      <a @click="collapsed = false" href="#" class="menu">
+        <i class="fas fa-chevron-right" />
       </a>
     </nav>
-    <section v-else id="information">
-      <a href="#" class="menu" @click="collapsed = true">
-        <i class="fas fa-chevron-left"></i>
+    <section id="information" v-else>
+      <a @click="collapsed = true" href="#" class="menu">
+        <i class="fas fa-chevron-left" />
       </a>
       <span class="spacer" />
       <header>
-        <img :src="logo" :alt="product" />
+        <img :src="logo" :alt="product">
         <h1>
           Connect
           <span class="text--primary">{{ product }}</span> to whatever you want
@@ -48,20 +48,20 @@
           <img
             src="https://handbook.mesg.com/logo/MESG-logo-horizontal-purple.svg"
             alt="MESG"
-          />
+          >
         </a>
         <div class="links">
           <a href="https://github.com/mesg-foundation" target="_blank">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github" />
           </a>
           <a href="https://discord.mesg.com" target="_blank">
-            <i class="fab fa-discord"></i>
+            <i class="fab fa-discord" />
           </a>
           <a href="https://docs.mesg.com" target="_blank">
-            <i class="fas fa-book"></i>
+            <i class="fas fa-book" />
           </a>
           <a href="mailto:contact@mesg.com" target="_blank">
-            <i class="fas fa-envelope-open-text"></i>
+            <i class="fas fa-envelope-open-text" />
           </a>
         </div>
       </footer>
@@ -147,7 +147,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .text--primary {
@@ -181,7 +181,7 @@ nav {
   display: flex;
   flex-direction: column;
   border-right: solid 1px #bdafd6;
-  padding: 20px;
+  padding: 40px;
   justify-content: space-between;
   position: relative;
 }
