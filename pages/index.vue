@@ -9,7 +9,6 @@
       v-model="process.map"
       @input="mapChange"
     />
-    <hr>
     <a @click="deploy = true" class="btn" href="#">Generate command</a>
 
     <textarea v-if="deploy" :value="command" />
@@ -61,7 +60,9 @@ export default {
       }
     },
     command() {
-      return `npx mesg-cli daemon:start && npx mesg-cli process:create '${JSON.stringify(this.result)}'`
+      return `npx mesg-cli daemon:start && npx mesg-cli process:create '${JSON.stringify(
+        this.result
+      )}'`
     }
   },
   methods: {
@@ -105,12 +106,14 @@ export default {
 <style scoped>
 .connector {
   margin-top: 2em;
-  width: 90%;
-  max-width: 50em;
+  width: 100%;
+  max-width: 520px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 textarea {
@@ -118,5 +121,9 @@ textarea {
   font-size: 1.5em;
   width: 100%;
   height: 200px;
+}
+
+.btn {
+  margin-top: 80px;
 }
 </style>

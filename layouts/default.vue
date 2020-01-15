@@ -133,6 +133,22 @@ ul li {
 span.spacer {
   flex: 1 1 auto;
 }
+a.btn {
+  border-radius: 3px;
+  background-color: rgb(var(--color-primary));
+  color: white;
+  padding: 14px 40px;
+  text-decoration: none;
+  transition: all 300ms;
+  font-family: var(--font);
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+}
 </style>
 
 <style scoped>
