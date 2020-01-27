@@ -20,20 +20,14 @@ export default {
     v() {
       return this.tasks.find(
         x =>
-          x.instance === this.value.instanceHash &&
-          x.taskKey === this.value.taskKey
+          x.value.task.instanceHash === this.value.instanceHash &&
+          x.value.task.taskKey === this.value.taskKey
       )
     }
   },
   methods: {
     onChange(evt) {
-      this.$emit('input', {
-        key: 'task',
-        task: {
-          instanceHash: evt.instance,
-          taskKey: evt.taskKey
-        }
-      })
+      this.$emit('input', evt.value)
     }
   }
 }

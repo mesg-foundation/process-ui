@@ -1,48 +1,86 @@
 {
   "events": [
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Approval",
-      "eventKey": "approval",
-      "filter": null
+      "value": {
+        "key": "event",
+        "event": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "eventKey": "approval"
+        }
+      }
     },
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Transfer",
-      "eventKey": "transfer",
-      "filter": null
+      "value": {
+        "key": "event",
+        "event": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "eventKey": "transfer"
+        }
+      }
     }
   ],
   "tasks": [
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 name",
-      "taskKey": "name"
+      "value": {
+        "key": "task",
+        "task": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "taskKey": "name"
+        }
+      }
     },
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 symbol",
-      "taskKey": "symbol"
+      "value": {
+        "key": "task",
+        "task": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "taskKey": "symbol"
+        }
+      }
     },
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 decimals",
-      "taskKey": "decimals"
+      "value": {
+        "key": "task",
+        "task": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "taskKey": "decimals"
+        }
+      }
     },
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 total supply",
-      "taskKey": "totalSupply"
+      "value": {
+        "key": "task",
+        "task": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "taskKey": "totalSupply"
+        }
+      }
     },
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get balance of an ERC20",
-      "taskKey": "balanceOf"
+      "value": {
+        "key": "task",
+        "task": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "taskKey": "balanceOf"
+        }
+      }
     },
     {
-      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get allowance of an ERC20",
-      "taskKey": "allowance"
+      "value": {
+        "key": "task",
+        "task": {
+          "instanceHash": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
+          "taskKey": "allowance"
+        }
+      }
     }
   ]
 }
