@@ -172,6 +172,31 @@ a.btn {
   letter-spacing: normal;
   text-align: center;
 }
+
+.input {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+label {
+  color: #0e061c;
+  font-family: var(--font);
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.input > table {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  width: 100%;
+}
 </style>
 
 <style scoped>

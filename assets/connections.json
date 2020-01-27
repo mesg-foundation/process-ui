@@ -1,13 +1,13 @@
 {
   "events": [
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Approval",
       "eventKey": "approval",
       "filter": null
     },
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Transfer",
       "eventKey": "transfer",
       "filter": null
@@ -15,32 +15,32 @@
   ],
   "tasks": [
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 name",
       "taskKey": "name"
     },
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 symbol",
       "taskKey": "symbol"
     },
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 decimals",
       "taskKey": "decimals"
     },
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get ERC20 total supply",
       "taskKey": "totalSupply"
     },
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get balance of an ERC20",
       "taskKey": "balanceOf"
     },
     {
-      "instance": "F6kQbFZfMCsTsHTnWCVLdAnJFU3TMGMKWGarRdCYdGa4",
+      "instance": "DLahUXhVmbqSPesidX9e2u8GKTnocdDZFiRiY3eoy23j",
       "name": "Get allowance of an ERC20",
       "taskKey": "allowance"
     }

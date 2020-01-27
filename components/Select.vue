@@ -52,24 +52,6 @@ export default {
 </script>
 
 <style scoped>
-.input {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-label {
-  color: #0e061c;
-  font-family: var(--font);
-  font-size: 17px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.41;
-  letter-spacing: normal;
-  display: block;
-  margin-bottom: 20px;
-}
-
 select {
   width: 100%;
   display: block;

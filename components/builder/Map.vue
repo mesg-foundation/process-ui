@@ -117,17 +117,17 @@ th {
 }
 td {
   text-align: left;
-  padding: 0.5em 0;
+  padding: 20px 0.5em;
 }
 code {
   background: #f2f2f2;
-  padding: 0.5em;
+  padding: 4px 10px;
   border-radius: 3px;
 }
 input {
   width: 100%;
   padding: 0.5em;
   border-radius: 3px;
-  border: solid 1px var(--color-gray);
+  border: solid 1px #bdafd6;
 }
 </style>
