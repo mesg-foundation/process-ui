@@ -12,8 +12,21 @@
       <i v-if="loading" class="fas fa-sync" />
       Deploy this process
     </a>
+    <a @click="showCode = true" v-if="canPublish" href="#">Or deploy on my own node</a>
 
-    <!-- <pre><code v-text="JSON.stringify(result, null, 2)" /></pre> -->
+    <Popup v-model="showCode">
+      <h4>
+        Deploy on my own
+        <a href="https://mesg.com/" target="_blank">MESG</a> Node
+      </h4>
+      <p>Open a terminal and type the following command:</p>
+      <code>
+        <pre>
+npx mesg-cli daemon:start
+npx mesg-cli process:create '{{ JSON.stringify(result) }}'
+        </pre>
+      </code>
+    </Popup>
   </section>
 </template>
 
@@ -22,14 +35,16 @@ import { encode } from '@mesg/api/lib/util/base58'
 import EventBuilder from '~/components/builder/Event'
 import TaskBuilder from '~/components/builder/Task'
 import MapBuilder from '~/components/builder/Map'
+import Popup from '~/components/Popup'
 import login from '~/mixins/login'
 import { events, tasks } from '~/assets/connections.json'
 export default {
-  components: { EventBuilder, TaskBuilder, MapBuilder },
+  components: { EventBuilder, TaskBuilder, MapBuilder, Popup },
   mixins: [login],
   data() {
     return {
       loading: false,
+      showCode: false,
       process: {
         event: null,
         task: null,
@@ -63,11 +78,6 @@ export default {
     },
     canPublish() {
       return this.result.nodes.length >= 2
-    },
-    command() {
-      return `npx mesg-cli daemon:start && npx mesg-cli process:create '${JSON.stringify(
-        this.result
-      )}'`
     }
   },
   methods: {
@@ -131,6 +141,7 @@ export default {
 
 .btn {
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 .btn .fa-sync {
   margin-right: 10px;

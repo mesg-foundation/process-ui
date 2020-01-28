@@ -145,6 +145,14 @@ h1 {
   color: #0e061c;
 }
 
+h4 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
 ul {
   padding-left: 20px;
 }
@@ -159,10 +167,15 @@ ul li {
 span.spacer {
   flex: 1 1 auto;
 }
+a {
+  color: rgb(var(--color-primary));
+  text-decoration: none;
+}
 a.btn {
   border-radius: 3px;
-  background-color: rgb(var(--color-primary));
-  color: white;
+  border: solid 1px rgb(var(--color-primary));
+  /* background-color: rgb(var(--color-primary)); */
+  color: rgb(var(--color-primary));
   padding: 14px 40px;
   text-decoration: none;
   transition: all 300ms;
@@ -176,7 +189,8 @@ a.btn {
   text-align: center;
 }
 a.btn[disabled] {
-  background-color: rgba(var(--color-primary), 0.4);
+  border-color: rgba(var(--color-primary), 0.4);
+  color: rgba(var(--color-primary), 0.4);
   cursor: auto;
 }
 
@@ -220,6 +234,13 @@ th {
 td {
   text-align: left;
   padding: 20px 0.5em;
+}
+
+pre {
+  overflow: auto;
+  background: black;
+  color: white;
+  padding: 0.5em;
 }
 </style>
 
