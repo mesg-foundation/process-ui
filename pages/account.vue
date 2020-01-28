@@ -25,6 +25,7 @@
           </tr>
         </tbody>
       </table>
+      <a @click="logout">logout</a>
     </div>
   </section>
 </template>
@@ -44,6 +45,10 @@ export default {
   methods: {
     deleteProcess(hash) {
       // TODO
+    },
+    async logout() {
+      await this.$auth.signOut()
+      this.$router.replace('/')
     }
   }
 }
@@ -51,14 +56,19 @@ export default {
 
 <style scoped>
 .connector {
+  padding: 40px;
   margin-top: 2em;
   width: 100%;
-  max-width: 520px;
+  max-width: 800px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+table {
+  margin-bottom: 40px;
 }
 </style>

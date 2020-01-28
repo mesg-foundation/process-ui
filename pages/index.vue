@@ -118,7 +118,7 @@ export default {
 
 <style scoped>
 .connector {
-  margin-top: 2em;
+  padding: 40px;
   width: 100%;
   max-width: 520px;
   margin: auto;
