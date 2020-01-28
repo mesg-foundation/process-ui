@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     v() {
-      const event = this.value.event || {}
+      const event = this.value ? (this.value.event || {}) : {}
       return this.events.find(
         x =>
           x.value.event.instanceHash === event.instanceHash &&

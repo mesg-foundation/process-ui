@@ -18,10 +18,11 @@ export default {
   },
   computed: {
     v() {
+      const task = this.value ? this.value.task || {} : {}
       return this.tasks.find(
         x =>
-          x.value.task.instanceHash === this.value.instanceHash &&
-          x.value.task.taskKey === this.value.taskKey
+          x.value.task.instanceHash === task.instanceHash &&
+          x.value.task.taskKey === task.taskKey
       )
     }
   },

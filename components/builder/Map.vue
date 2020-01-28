@@ -78,7 +78,7 @@ export default {
     }
   },
   data() {
-    const decoded = this.value.outputs ? decode(this.value.outputs) : {}
+    const decoded = this.value && this.value.outputs ? decode(this.value.outputs) : {}
     return {
       outputs: this.inputs.reduce(
         (prev, current) => ({
@@ -103,22 +103,6 @@ export default {
 </script>
 
 <style scoped>
-table {
-  border-spacing: 0;
-}
-thead {
-  border-bottom: solid 1px var(--color-gray);
-  margin-bottom: 1em;
-}
-th {
-  text-align: left;
-  padding: 0.5em 0;
-  border-bottom: solid 1px #f2f2f2;
-}
-td {
-  text-align: left;
-  padding: 20px 0.5em;
-}
 code {
   background: #f2f2f2;
   padding: 4px 10px;
