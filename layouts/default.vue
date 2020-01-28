@@ -230,14 +230,20 @@ nav {
   display: flex;
   flex-direction: column;
   border-right: solid 1px #bdafd6;
-  padding: 40px;
+  /* padding: 40px; */
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 
 nav > img {
   transform: rotateZ(-90deg);
   height: 40px;
+}
+
+nav > a > img {
+  width: 40px;
+  margin-bottom: 20px;
 }
 
 header > img {
