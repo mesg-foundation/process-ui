@@ -8,8 +8,8 @@
       :inputs="map.task.inputs"
       v-model="process.map"
     />
-    <a @click="deploy" class="btn" href="#" :disabled="!canPublish">
-      <i v-if="loading" class="fas fa-sync"></i>
+    <a @click="deploy" :disabled="!canPublish" class="btn" href="#">
+      <i v-if="loading" class="fas fa-sync" />
       Deploy this process
     </a>
 

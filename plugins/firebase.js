@@ -3,7 +3,6 @@ import * as firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
 import 'firebase/analytics'
-import { firestorePlugin } from 'vuefire'
 
 if (!firebase.apps.length) {
   Vue.prototype.$firebase = firebase.initializeApp({
@@ -21,5 +20,3 @@ if (!firebase.apps.length) {
   Vue.prototype.$auth = firebase.auth()
   Vue.prototype.$analytics = firebase.analytics()
 }
-
-Vue.use(firestorePlugin)

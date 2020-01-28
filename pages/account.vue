@@ -7,7 +7,7 @@
           <tr>
             <th>Date</th>
             <th>Link</th>
-            <th></th>
+            <th />
           </tr>
         </thead>
         <tbody>
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     deleteProcess(hash) {
-      console.log(hash)
+      // TODO
     }
   }
 }
