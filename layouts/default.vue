@@ -2,10 +2,10 @@
   <div class="container">
     <nav v-if="collapsed">
       <span class="spacer" />
-      <img :src="logoInline" :alt="product">
+      <img :src="logoInline" :alt="product" />
       <span class="spacer" />
       <a href="https://mesg.com" target="_blank">
-        <img src="https://handbook.mesg.com/brandmark/MESG-brandmark-purple.svg" alt="MESG">
+        <img src="https://handbook.mesg.com/brandmark/MESG-brandmark-purple.svg" alt="MESG" />
       </a>
       <a @click="collapsed = false" href="#" class="menu">
         <i class="fas fa-chevron-right" />
@@ -17,7 +17,7 @@
       </a>
       <span class="spacer" />
       <header>
-        <img :src="logo" :alt="product">
+        <img :src="logo" :alt="product" />
         <h1>
           Connect
           <span class="text--primary">{{ product }}</span> to whatever you want
@@ -48,7 +48,7 @@
           <img
             src="https://handbook.mesg.com/logo/MESG-logo-horizontal-purple.svg"
             alt="MESG"
-          >
+          />
         </a>
         <div class="links">
           <a href="https://github.com/mesg-foundation" target="_blank">
@@ -67,13 +67,16 @@
       </footer>
     </section>
     <section id="content">
+      <Account class="account" />
       <nuxt />
     </section>
   </div>
 </template>
 
 <script>
+import Account from '~/components/Account'
 export default {
+  components: { Account },
   props: {
     logo: {
       type: String,
@@ -172,6 +175,10 @@ a.btn {
   letter-spacing: normal;
   text-align: center;
 }
+a.btn[disabled] {
+  background-color: rgba(var(--color-primary), 0.4);
+  cursor: auto;
+}
 
 .input {
   width: 100%;
@@ -196,6 +203,23 @@ label {
   padding: 20px;
   border-radius: 6px;
   width: 100%;
+}
+
+table {
+  border-spacing: 0;
+}
+thead {
+  border-bottom: solid 1px var(--color-gray);
+  margin-bottom: 1em;
+}
+th {
+  text-align: left;
+  padding: 0.5em 0;
+  border-bottom: solid 1px #f2f2f2;
+}
+td {
+  text-align: left;
+  padding: 20px 0.5em;
 }
 </style>
 
@@ -249,6 +273,8 @@ header > img {
   flex: 1 1 auto;
   width: 60%;
   background: var(--background);
+  max-height: 100vh;
+  overflow: auto;
 }
 
 .container {
@@ -283,5 +309,11 @@ footer .links {
 footer .links a {
   color: rgb(var(--color-primary));
   margin-left: 1em;
+}
+
+.account {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 </style>
